@@ -1,14 +1,50 @@
-.staffIntroduce{
-    background-color: #7D0000;
+.header {
     width: 100%;
-    height: 80px;
-    align-items: center;
-    display: flex;
-    padding-left: 40px;
-    color: #EDDC98;
-    font-size: 20px;
+    height: 90px;
+    background-color:#7D0000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
+.header-logo {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+}
+
+.header-img {
+    width: 70px;
+    height: 70px;
+}
+
+.header-nav {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.header-ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.header-li {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main {
+    margin-top: 140px;
+}
+
+.profile-head {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+}
 
 .self-profile {
     display: flex;
@@ -16,6 +52,7 @@
     align-items: center;
     background: #fff;
     border: 2px solid #eee;
+    margin-top: 60px;
 }
 
 .pf-left, .pf-right {
@@ -34,15 +71,14 @@
 
 
 .pf-img {
-    /* width: 100px; */
-    height: 200px;
+    height: 300px;
     margin: 10px auto;
 }
 
 .pf-img img {
-    border-radius: 50%;
+    border-radius: 10px;
     border: 2px solid #eee;
-    width: 150px;
+    width: 200px;
 }
 
 .pf-imgText {
@@ -71,9 +107,12 @@
     flex-direction: column;
 }
 
-/* 画像の切り替え */
+.li-point {
+    font-size: 20px;
+}
+
 #changePic {
-    animation :imgfade 4s infinite;
+    animation: imgfade 4s infinite;
     opacity: 0;
     }
 
@@ -98,14 +137,40 @@
     }
 
 
-.footer-txt{
+.clerk-head {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.clerk-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #eee;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.cle-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.footer-txt {
     background-color: #7D0000;
     width: 100%;
     height: 80px;
     align-items: center;
     display: flex;
     padding-left: 40px;
-    color: #EDDC98;
+    color: white;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 1000px;
 }
