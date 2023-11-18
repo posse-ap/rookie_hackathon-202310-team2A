@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
 </head>
 <body>
     <header class="header">
+        <figure><img src="./yuchiassets/img/rinrinlogo.png" alt="" class="w-16"></figure>
         <nav style="margin-left: auto;">
             <ul class="flex gap-3">
                 <li>
@@ -25,22 +26,41 @@
         </nav>
     </header>
     <main style="position: relative;">
-        <button id="scrollButton" style="position: absolute; bottom: 6px; right: 6px;">トップへ</button>
-        <section>
-            <h1 class="introself text-2xl" id="me">自己紹介</h1>
-            <div class="justify-center md:flex">
-                <div>
+        <button id="scrollButton" style="position: fixed; bottom: 10px; right: 10px; color: goldenrod; background-color: #7d0000; width: auto; font-size: 11px; border-radius: 50%; width: 50px;height: 50px; padding: 8px; opacity: 75%;" >TOPへ</button>
+        <section class="mb-12 sm:justify-center introself ">
+            <h1 class=" text-4xl text-center" id="me">自己紹介</h1>
+            <div class="md:justify-center md:flex md:px-20">
+                <div class="my-10">
                     <figure class="myimg">
                         <img src="./yuchiassets/img/yuchi1.jpg" alt="">
                     </figure>
                 </div>
-                <div>
-                    <p>近藤由知</p>
+                <div class=" sm:mx-auto sm:px-3.5 my-10">
+                    <p class="text-center text-2xl">近藤由知</p>
+                    <ul class="gap-x-20   flex justify-between my-5">
+                        <li>
+                            <button id="buttoHobby" class="w-20 h-20 rounded-full bg-blue-500 p-2 text-sm text-center">趣味</button>
+                        </li>
+                        <li>
+                            <button id="buttoFavo" class="w-20 h-20 rounded-full bg-red-500 p-2 text-sm text-center">好きな<br>食べ物</button>
+                        </li>
+                        <li>
+                            <button id="buttoComment" class="w-20 h-20 rounded-full bg-gray-500 p-2 text-sm text-center">ひとこと</button>
+                        </li>
+                    </ul>
+                    <div class="h-36">
+                        <h4 class="hobby bg-blue-500 flex">アニメを見ること<br>ゲームをすること<br>漫画を読むこと<br>おいしいもの<img src="./yuchiassets/img/gohan1.jpg" alt="" style="border-radius: 4px; width: 150px; margin-left: auto;"></h4>
+                        <h4 class="favorite bg-red-500">甘いもの<br>トマト</h4>
+                        <h4 class="comment bg-gray-500">是非、琳琳飯店にお越しください</h4>
+                        
+                        
+                        
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <h1 class="intromymemb text-2xl" id="us">横もくメンバー</h1>
+        <section class="my-10">
+            <h1 class="text-4xl text-center" id="us">横もくメンバー</h1>
             <div class="md:px-56">
                 <ul class="mem-imgs">
                     <li>
@@ -49,7 +69,7 @@
                             <img src="./yuchiassets/img/tomo1.jpg" alt="">
                         </figure>
                         <div>
-                            <p class="text-center">
+                            <p class="text-center my-3">
                                 香川出身で元気<br>うどん好きそう<br>メガネ似合うと思うけどな
                             </p>
                         </div>
@@ -60,7 +80,7 @@
                             <img src="./yuchiassets/img/taka1.jpg" alt="">
                         </figure>
                         <div>
-                            <p class="text-center">
+                            <p class="text-center my-3">
                                 ピアスかっこいいね！<br>筋肉いいね！<br>鳥取何もないね！
                             </p>
                         </div>
@@ -71,7 +91,7 @@
                             <img src="./yuchiassets/img/miduki1.jpg" alt="">
                         </figure>
                         <div>
-                            <p class="text-center">
+                            <p class="text-center my-3">
                                 ともが迷惑かけてごめん<br>たかが迷惑かけてごめん<br>ごめん
                             </p>
                         </div>
@@ -80,8 +100,11 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>rInrInhAntEn</p>
+    <footer class="text-red-50">
+        <div class="mx-auto w-24 p-3">
+            <p>琳琳飯店</p>
+        </div>
+        
     </footer>
     <script src="./yuchiassets/js/script.js"></script>
 </body>
