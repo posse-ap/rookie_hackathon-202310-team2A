@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mainrecet.css" />
+    <link rel="stylesheet" href="./css/mainpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;500&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header-king">
+        <div class="header-logo">
+          <a href=""></a>
+          <img
+            class="header-rinrin"
+            src="./img/琳琳飯店.png"
+            alt=""
+            width="60px"
+            height="60px"
+          />
+        </div>
+        <div class="header-matome">
+          <nav class="header-list">
+            <a class="header-link" href="">top</a>
+            <a class="header-link" href="">メニュー紹介</a>
+            <a class="header-link" href="">アクセス</a>
+            <a class="header-link" href="">お問い合わせ</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="big-main">
+        <div class="main-visual"></div>
+      </div>
+      <div class="main-image">
+        <span class="main-title">琳琳飯店</span>
+      </div>
+      <!--人気料理-->
+      <div>
+        <div class="popular-food">
+          <h1 class="ebi-popular">定番人気料理</h1>
+          <div class="ebitiri">
+            <img class="ebi-img" src="./img/ebitiri.jpg" alt="" width="500px" />
+            <section class="ebi-group">
+              <h2 class="ebi-food">エビチリ</h2>
+              <p class="ebi-explain">
+                エビのぷりぷりとした触感や濃厚なおいしさを味わえるファンの多いメニューです。
+              </p>
+            </section>
+          </div>
+        </div>
+        <div class="rich">
+          <h1 class="rich-title">豊富な品揃え</h1>
+          <div>
+            <ul class="rich-menu slider">
+              <div class="rich-menu">
+                <li class="rich-link">
+                  <div class="china">
+                    <h2 class="china-food">回鍋肉</h2>
+                    <p>
+                      四川料理の定番中の定番料理。本場のピリ辛な味付けをご堪能ください
+                    </p>
+                  </div>
+                  <img src="./img/hoiko-ro-.jpg" alt="" width="400px" class="china-eat"/>
+                </li>
+              </div>
+              <div class="rich-menu">
+              <li class="rich-link">
+                <div  class="china">
+                  <h2 class="china-food">麻婆豆腐</h2>
+                  <p>たっぷりの山椒がかかったあつあつの麻婆豆腐です</p>
+                </div>
+                <img src="./img/ma-bo-douhu.jpg" alt="" width="400px" class="china-eat"/>
+              </li>
+              </div>
+              <div class="rich-menu">
+              <li class="rich-link">
+                <div  class="china">
+                  <h2 class="china-food">青椒肉絲</h2>
+                  <p>本格的な製法で作られたチンジャオロースーです</p>
+                </div>
+                <img src="./img/tinjaoro-su-.jpg" alt="" width="400px"class="china-eat" />
+              </li>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="people">
+          <li class="people-pic">
+            <img
+              src="./img/みづき　個人写真　２.jpg"
+              alt=""
+              width="300px"
+              height="300px"
+              class="photo"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/ゆうち　個人写真.jpg"
+              alt=""
+              width="300px"
+              height="300px"
+              class="photo"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/たか　個人写真.jpg"
+              alt=""
+              width="300px"
+              class="photo"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/とも　個人写真.jpg"
+              alt=""
+              width="300px"
+              class="photo"
+            />
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <img src="./img/琳琳飯店.png" alt="" width="140px" height="140px" />
+        <div></div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".slider").slick({
+        autoplay: true,
+        dots: true,
+      });
+    </script>
+  </body>
+</html>
