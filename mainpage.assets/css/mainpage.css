@@ -120,7 +120,7 @@
 
 .rich-title{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     font-size: 40px;
     margin-top: 140px;
     letter-spacing: 3px;
@@ -131,6 +131,7 @@
 }
 .china-food{
     font-size: 30px;
+    margin-bottom: 30px;
 }
 
 .china{
@@ -138,7 +139,7 @@
 }
 
 .china-eat{
-    
+    margin-left: 100px;
 }
 /*人物紹介*/
 
