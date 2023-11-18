@@ -1,0 +1,111 @@
+.staffIntroduce{
+    background-color: #7D0000;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    padding-left: 40px;
+    color: #EDDC98;
+    font-size: 20px;
+}
+
+
+.self-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #eee;
+}
+
+.pf-left, .pf-right {
+    padding: 25px 20px;
+}
+
+.pf-left {
+    width: 43%;
+    border-right: 2px solid #eee;
+    text-align: center;
+}
+
+.pf-right {
+    width: 57%;
+}
+
+
+.pf-img {
+    /* width: 100px; */
+    height: 200px;
+    margin: 10px auto;
+}
+
+.pf-img img {
+    border-radius: 50%;
+    border: 2px solid #eee;
+    width: 150px;
+}
+
+.pf-imgText {
+    margin-top: 10px;
+
+}
+
+.pf-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #6C9FCE;
+    margin-bottom: 5px;
+}
+
+.pf-job {
+    color: #7b7b7b;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 画像の切り替え */
+#changePic {
+    animation :imgfade 4s infinite;
+    opacity: 0;
+    }
+
+    @keyframes imgfade {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+
+.footer-txt{
+    background-color: #7D0000;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    padding-left: 40px;
+    color: #EDDC98;
+    font-size: 20px;
+    margin-top: 100px;
+}
