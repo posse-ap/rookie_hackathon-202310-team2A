@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -77,27 +81,42 @@
                       四川料理の定番中の定番料理。本場のピリ辛な味付けをご堪能ください
                     </p>
                   </div>
-                  <img src="./img/hoiko-ro-.jpg" alt="" width="400px" class="china-eat"/>
+                  <img
+                    src="./img/hoiko-ro-.jpg"
+                    alt=""
+                    width="400px"
+                    class="china-eat"
+                  />
                 </li>
               </div>
               <div class="rich-menu">
-              <li class="rich-link">
-                <div  class="china">
-                  <h2 class="china-food">麻婆豆腐</h2>
-                  <p>たっぷりの山椒がかかったあつあつの麻婆豆腐です</p>
-                </div>
-                <img src="./img/ma-bo-douhu.jpg" alt="" width="400px" class="china-eat"/>
-              </li>
+                <li class="rich-link">
+                  <div class="china">
+                    <h2 class="china-food">麻婆豆腐</h2>
+                    <p>たっぷりの山椒がかかったあつあつの麻婆豆腐です</p>
+                  </div>
+                  <img
+                    src="./img/ma-bo-douhu.jpg"
+                    alt=""
+                    width="400px"
+                    class="china-eat"
+                  />
+                </li>
               </div>
               <div class="rich-menu">
-              <li class="rich-link">
-                <div  class="china">
-                  <h2 class="china-food">青椒肉絲</h2>
-                  <p>本格的な製法で作られたチンジャオロースーです</p>
-                </div>
-                <img src="./img/tinjaoro-su-.jpg" alt="" width="400px"class="china-eat" />
-              </li>
-            </div>
+                <li class="rich-link">
+                  <div class="china">
+                    <h2 class="china-food">青椒肉絲</h2>
+                    <p>本格的な製法で作られたチンジャオロースーです</p>
+                  </div>
+                  <img
+                    src="./img/tinjaoro-su-.jpg"
+                    alt=""
+                    width="400px"
+                    class="china-eat"
+                  />
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -105,28 +124,48 @@
       <div>
         <ul class="people">
           <li class="people-pic">
-            <img src="./img/みづき　個人写真　２.jpg" alt="" class="photo"/>
+            <img src="./img/みづき　個人写真　２.jpg" alt="" class="photo" />
             <p class="people-name">林美月</p>
           </li>
           <li class="people-pic">
-            <img src="./img/ゆうち　個人写真.jpg" alt="" class="photo"/>
+            <img src="./img/ゆうち　個人写真.jpg" alt="" class="photo" />
             <p class="people-name">近藤由知</p>
           </li>
           <li class="people-pic">
-            <img src="./img/たか　個人写真.jpg" alt="" class="photo"/>
+            <img src="./img/たか　個人写真.jpg" alt="" class="photo" />
             <p class="people-name">吉川貴之</p>
           </li>
           <li class="people-pic">
-            <img src="./img/とも　個人写真.jpg" alt="" class="photo"/>
+            <img src="./img/とも　個人写真.jpg" alt="" class="photo" />
             <p class="people-name">若松智彦</p>
           </li>
         </ul>
       </div>
-    </main>
-    <footer style="background-color: #7D0000; width: 100%; height: 250px;">
       <div>
-        <img src="./img/琳琳飯店.png" alt="" width="120px" height="120px" style="margin: 60px 0 0 40px;" />
-        <ul style="display: flex;gap: 30px; font-size: 20px;color: white;justify-content: flex-end;margin-right: 30px;">
+        <h1 style="font-size: 40px;margin: 50px 50px; text-align: center;">アクセス</h1>
+        <div id="mapid" style="width: 100%; height: 600px"></div>
+        <p style="font-size: 30px; margin: 40px 40px;">お待ちしております</p>
+      </div>
+    </main>
+    <footer style="background-color: #7d0000; width: 100%; height: 250px">
+      <div>
+        <img
+          src="./img/琳琳飯店.png"
+          alt=""
+          width="120px"
+          height="120px"
+          style="margin: 60px 0 0 40px"
+        />
+        <ul
+          style="
+            display: flex;
+            gap: 30px;
+            font-size: 20px;
+            color: white;
+            justify-content: flex-end;
+            margin-right: 30px;
+          "
+        >
           <li><a href="">トップ</a></li>
           <li><a href="">メニュー紹介</a></li>
           <li><a href="">アクセス</a></li>
@@ -142,5 +181,19 @@
         dots: true,
       });
     </script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("mapid").setView([35.688544, 139.764692], 18);
+      L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png", {
+        attribution:
+          "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>",
+      }).addTo(map);
+
+      //JIG-SAW本社の位置にマーカーを追加する。
+      var marker = L.marker([35.688544, 139.764692]).addTo(map);
+      //上のマーカーにポップアップを追加する。
+      marker.bindPopup("琳琳飯店本店").openPopup();
+    </script>
+    <script src="./js/mainpage.js"></script>
   </body>
 </html>
