@@ -1,0 +1,61 @@
+
+
+.main{
+padding: 30px;
+background-color: #333;
+margin: 100px;;
+}
+
+
+#contents{
+width:100%;
+font-size:50px;
+margin: 40px auto;
+color:aqua;
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.hobby2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.school {
+    text-align: center;
+    line-height: 48px;
+}
+
+.title{
+    position: static;
+    height: 40;
+    background-color: blue;
+    box-sizing: content-box;
+}
+
+.hobby {
+    justify-content: center;
+}
+
+.title1 {
+    color: blue;
+    position: fixed;
+    background-color: brown;
+}
+
+.span {
+    height: 500px;
+    padding-left: 1200px;
+}
+
+.name2 [
+    
+]
