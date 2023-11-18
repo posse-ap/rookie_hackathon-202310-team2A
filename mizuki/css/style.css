@@ -3,6 +3,7 @@
     margin: 0;
     position: relative;
     font-family: "ＭＳ Ｐ明朝", serif;
+    height: 2000px;
 }
 
 /*ヘッダー*/
@@ -66,7 +67,7 @@
 /*メイン*/
 
 .main{
-    background-color: #f4f3ef;
+    background-color: #dbcb8b;
     
 }
 
@@ -148,6 +149,7 @@
     top: 7%;
     left: 40%;
     font-weight: bold;
+    line-height: 50px;
     
 }
 .mizu{
@@ -220,18 +222,23 @@
 .member-naka{
     border: 3px solid  #281a14 ;
     border-top: none;
+    background-color: rgb(65, 20, 20);
 }
 .member-title{
     font-weight: bold;
     padding-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    line-height: 30px
+    line-height: 30px;
+    color: white;
+    
 }
 
 .member-detail{
     text-align: center;
     padding: 0 20px 20px 20px;
+    letter-spacing: 2.5px;
+    color: white;
 }
 
 /*フッフッター*/
