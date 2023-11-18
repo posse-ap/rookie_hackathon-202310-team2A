@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tomo.assets/reset.css">
     <link rel="stylesheet" href="./tomo.assets/tomo.css">
     <title>個人ページ（とも）</title>
 </head>
-<body>
+<body class="body">
 
     <header class="header">
         <div class="header-logo">
@@ -16,15 +17,15 @@
         <div>
             <nav class="header-nav">
             <ul class="header-ul">
-                <li class="header-li">自己紹介</li>
-                <li class="header-li">従業員紹介</li>
+                <li class="header-li" ><a href="#self"> 自己紹介</a></li>
+                <li class="header-li"><a href="#cle"> 従業員紹介</a></li>
             </ul>
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <p class="profile-head">自己紹介</p>
+        <p id="self" class="profile-head">自己紹介</p>
         <div class="self-profile">
             <div class="pf-left">
                 <img class="pf-img" id="changePic" src="./tomo.assets/img/tomopicture1.jpg" alt="">
@@ -46,7 +47,7 @@
             </div>
         </div>
 
-        <p class="clerk-head">従業員紹介</p>
+        <p id="cle" class="clerk-head">従業員紹介</p>
         <div class="clerk-profile">
             <div class="cle-block">
                 <img class="cle-img" src="./tomo.assets/img/ゆーち.jpg" alt="">
