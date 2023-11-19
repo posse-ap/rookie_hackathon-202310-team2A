@@ -150,6 +150,8 @@
     left: 40%;
     font-weight: bold;
     line-height: 50px;
+    padding: 20px;
+    background-color: aliceblue;
     
 }
 .mizu{
@@ -161,7 +163,7 @@
 
 .mizu-img{
     margin-top: 30%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 
 .mizu-img2{
@@ -199,6 +201,11 @@
     margin-top: 200px;
 }
 
+.team-gro{
+    padding: 20px;
+    background-color: aliceblue;
+}
+
 .team-member{
     text-align: center;
     font-weight: bold;
@@ -217,7 +224,8 @@
     list-style: none;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    padding-bottom: 100px;
 }
 .member-naka{
     border: 3px solid  #281a14 ;
