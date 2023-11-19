@@ -179,12 +179,19 @@ justify-content: center;
     border-radius: 50%;
 }
 
+
+
 .cle-imgtxt {
     text-align: center;
 }
 
 .cle-name {
     color: #6C9FCE;
+    padding: 5px;
+}
+
+.cle-protxt {
+    padding: 5px;
 }
 
 .cle-job {
