@@ -7,7 +7,26 @@ $('.one-time').slick({
     slidesToShow: 1,
     adaptiveHeight: true
   });
-
+  const contactForm = document.getElementById('tele');
+  //     contactForm.addEventListener('submit', function(event) {
+  //       event.preventDefault(); 
+  // const name = document.getElementById('name').value;
+  // const email = document.getElementById('email').value;
+  // const message = document.getElementById('message').value;
+  // console.log('お名前:', name);
+  // console.log('メールアドレス:', email);
+  // console.log('お問い合わせ内容:', message);
+  // });
+  const formbtn = document.querySelector('#btnform');
+  const name1 = document.getElementById('name');
+  const email = document.getElementById('email');
+  const message = document.getElementById('message');
+  formbtn.addEventListener('click', () => {
+    console.log('お名前:'+ name1.value);
+    console.log('メールアドレス:',+email.value);
+    console.log('お問い合わせ内容:'+ message.value);
+  }
+  );
 //   function detectBrowser() {
 //     var useragent = navigator.userAgent;
 //     var mapdiv = document.getElementById("map");
