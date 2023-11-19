@@ -1,0 +1,318 @@
+.body {
+    font-family: "ＭＳ Ｐ明朝", serif;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color:#7D0000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+/* body{
+    width: 100%;
+    position: relative;
+} */
+.header-logo {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+}
+
+.header-img {
+    width: 70px;
+    height: 70px;
+}
+
+.header-nav {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+}
+.header-ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    padding-top: 20px;
+}
+
+.header-li {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main {
+    width: 100%;
+    margin-top: 140px;
+}
+
+.profile-head {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.self-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #eee;
+    margin-top: 60px;
+    width: 96%;
+}
+
+.pf-left, .pf-right {
+    padding: 25px 20px;
+}
+
+.pf-left {
+    width: 43%;
+    border-right: 2px solid #eee;
+    text-align: center;
+}
+
+.pf-right {
+    width: 57%;
+}
+
+
+.pf-img {
+    height: 300px;
+    margin: 10px auto;
+}
+
+.pf-img img {
+    border-radius: 10px;
+    border: 2px solid #eee;
+    width: 200px;
+}
+
+.pf-imgText {
+    margin-top: 10px;
+
+}
+
+.pf-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #6C9FCE;
+    margin-bottom: 5px;
+}
+
+.pf-job {
+    color: #7b7b7b;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.li-point {
+    font-size: 20px;
+}
+
+#changePic {
+    animation: imgfade 4s infinite;
+    opacity: 0;
+    }
+
+    @keyframes imgfade {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+
+.clerk-head {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.clerk-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #eee;
+    margin-top: 60px;
+    padding: 20px;
+    width: 96%;
+}
+
+.cle-block {
+justify-content: center;
+}
+
+.cle-img {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.cle-imgtxt {
+    text-align: center;
+}
+
+.cle-name {
+    color: #6C9FCE;
+    padding: 5px;
+}
+
+.cle-protxt {
+    padding: 5px;
+}
+
+.cle-job {
+    color: #7b7b7b;
+}
+
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-txt {
+    background-color: #7D0000;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+
+@media(max-width:768px){
+
+    .pf-img {
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .cle-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-logo {
+        padding-top: 10px;
+        z-index: 1;
+    }
+
+    .header-button {
+        width: 42px;
+        height: 42px;
+        position: relative;
+        margin-left: 360px;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    .header-buttonLine {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color:black ;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header-buttonLine:nth-of-type(1) {
+        top: 13px;
+    }
+
+    .header-buttonLine:nth-of-type(2) {
+        top: 20px;
+    }
+
+    .header-buttonLine:nth-of-type(3) {
+        top: 27px;
+    }
+
+    .header-nav {
+        position: fixed;
+        inset: 0;
+        background-color: #F7F9FB;
+        visibility: hidden;
+        /* display: none; */
+        opacity: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 120px 24px 40px;
+        transition: visibility .3s linear, opacity .3s linear;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(1) {
+        transform: translateX(-50%) rotate(45deg);
+        top: 20px;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(3) {
+        transform: translateX(-50%) rotate(-45deg);
+        top: 20px;
+    }
+
+    .header.is-open .header-nav {
+        visibility: visible;
+
+        opacity: 1;
+    }
+
+    .header-nav .header-ul {
+        visibility: visible;
+        flex-direction: column;
+        z-index: 150;
+    }
+
+
+
+
+
+
+}

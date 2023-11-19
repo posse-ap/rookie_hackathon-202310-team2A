@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/mizuki/css/reset.css" />
+    <link rel="stylesheet" href="/mizuki/css/style.css" />
+    <link rel="stylesheet" href="./css/sp/spmizuki.css">
+  </head>
+  <body class="body">
+    <!--ここからヘッダー-->
+    <header class="header cp_bgpattern10">
+      <div class="header-logo">
+        <img class="header-img" src="./img/琳琳飯店.png" alt="" />
+      </div>
+      <div>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <a href="" class="header-link modal-open">自己紹介</a>
+            <a href="#team" class="header-link">チームメンバー</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--ここからメイン-->
+    <main class="main">
+      <!--モーダル-->
+      <div class="modal-container">
+        <div class="modal-body">
+          <!--モーダルボタン-->
+          <button class="modal-close" type="button">close</button>
+          <!--モーダル内コンテンツ-->
+          <div class="stage-content">
+            <div class="stage-in">
+              <h1 class="modal-title">【スタッフ休暇のお知らせ】</h1>
+              <p class="modal-detail">
+                スタッフの林美月は11月19日から2週間の休暇を取らせていただきます。
+                <p class="modal-detail">また、現在人手不足により、混雑時には入店人数を制限する可能性があるため、ピーク時を避けてご来店ください。</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="mizu-title js-fadein" name="introduce" style="border: 3px solid rgb(99, 22, 22);">自己紹介</h1>
+        <ul class="js-fadein">
+          <li class="mizu">
+            <img
+              class="mizu-img"
+              src="./img/みづき　個人写真　２.jpg"
+              alt=""
+              width="200px"
+            />
+            <p class="mizu-int cp_bgpattern10">
+              林美月　<br>
+              2023年11月1日からホールとして勤務  <br />飲食未経験からの採用ですが、日々成長を続けています。
+            </p>
+          </li>
+          <li class="mizu">
+            <p class="mizu-int2 cp_bgpattern10">
+              早稲田大学文化構想学部所属　<br />大学では言語や文学など文系科目を幅広く学んでいる。<br />最近はkpopにもハマり始めている。
+            </p>
+            <img
+              class="mizu-img2"
+              src="./img/自分　個人写真　立ち絵.jpg"
+              alt=""
+              width="300px"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="member js-fadein">
+        <div class="team-member " >
+          <a href="" class="team-gro" id="team" style="border: 3px solid rgb(94, 41, 41);">チームメンバー</a>
+        </div>
+        <ul class="member-list">
+          <li class="member-link">
+            <img
+              class="member-int"
+              src="./img/ゆうち　個人写真.jpg"
+              alt=""
+              width="300px"
+              height="200px"
+            />
+            <div class="member-naka">
+              <h1 class="member-title">天災ハッカー<br />近藤由知</h1>
+              <p class="member-detail">
+                なんだかいつも眠そうだが、いざという時には頼れる男。<br />
+                集合時間は守るタイプ。
+              </p>
+            </div>
+          </li>
+          <li class="member-link">
+            <img
+              class="member-int"
+              src="./img/とも　個人写真.jpg"
+              alt=""
+              width="300px"
+            />
+            <div class="member-naka">
+              <h1 class="member-title">麻雀系ゆるふわ男子<br />若松智彦</h1>
+              <div style="padding-bottom: 35px;">
+              <p class="member-detail">
+                目が合うと絶対変顔してくる。意外と静かな時もある。
+              </p>
+            </div>
+            </div>
+          </li>
+          <li class="member-link">
+            <img
+              class="member-int"
+              src="./img/たか　個人写真.jpg"
+              alt=""
+              width="300px"
+              height="200px"
+            />
+            <div class="member-naka">
+              <h1 class="member-title">ギャップ製造機<br />吉川孝之</h1>
+              <div style="padding-bottom:13px ;">
+              <p class="member-detail">
+                ノリには全力で乗る。<br />
+                最初会ったとき身体がでかくて大概びっくりされる。
+              </p>
+            </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!--ここからフッター-->
+    <footer class="footer cp_bgpattern10">
+      <div>
+        <div class="footer-logo">
+          <img src="./img/琳琳飯店.png" alt="" width="140px" />
+        </div>
+        <nav class="footer-bun">
+          <a class="footer-naka" href="">自己紹介</a>
+          <a class="footer-naka" href="#team">チームメンバー</a>
+          
+        </nav>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

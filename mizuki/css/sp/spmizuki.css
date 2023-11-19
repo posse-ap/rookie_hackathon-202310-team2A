@@ -1,0 +1,89 @@
+/*レスポンシブ*/
+@media (max-width: 768px){
+
+.body{
+    
+}
+/*モーダル*/
+.modal-body{
+    width: 350px;
+    margin-left: 35px;
+    height: 400px;
+}
+.stage-in{
+    padding: 25px;
+}
+
+.modal-title{
+    font-size: 23px;
+}
+
+.modal-detail{
+    font-size: 20px;
+}
+
+/*自己紹介*/
+.mizu{
+    display: flex;
+    flex-direction: column;
+}
+
+.mizu-img{
+    margin-top: 300px;
+    margin-left: 60px;
+}
+
+.mizu-title{
+    position: absolute;
+    top: 150px;
+    left: 110px;
+}
+
+.mizu-int{
+    margin: 0 50px 0 0;
+    
+}
+
+.mizu-int2{
+    width: 317px;
+}
+
+/*メンバー紹介*/
+.member-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.member-link{
+    margin-left:50px;
+}
+
+/*フッター*/
+.footer-logo{
+    top: 60px;
+    left: 40px;
+}
+
+.footer-bun{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+.footer-naka{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+}

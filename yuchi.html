@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja" style=" font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif JP', serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="./yuchiassets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>my page</title>
+</head>
+<body>
+    <header class="header">
+        <figure><img src="./yuchiassets/img/rinrinlogo.png" alt="" class="w-16"></figure>
+        <nav style="margin-left: auto;">
+            <ul class="flex gap-3">
+                <li>
+                    <a href="#me" class="text-red-50">自己紹介</a>
+                </li>
+                <li>
+                    <a href="#us" class="text-red-50">横もくメンバー</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main style="position: relative;">
+        <button id="scrollButton" style="position: fixed; bottom: 10px; right: 10px; color: goldenrod; background-color: #7d0000; width: auto; font-size: 10px; border-radius: 50%; width: 50px;height: 50px; padding: 8px; opacity: 75%;" >TOPへ</button>
+        <section class="mb-12 sm:justify-center introself ">
+            <h1 class=" text-4xl text-center" id="me">自己紹介</h1>
+            <div class="md:justify-center md:flex md:px-20">
+                <div class="my-10 border-gray-50 border border-opacity-60 border-solid">
+                    <figure class="myimg">
+                        <img src="./yuchiassets/img/yuchi1.jpg" alt="">
+                    </figure>
+                </div>
+                <div class=" sm:mx-auto sm:px-3.5 my-10">
+                    <p class="text-center text-2xl">近藤由知</p>
+                    <ul class="gap-x-20   flex justify-between my-5">
+                        <li>
+                            <button id="buttoHobby" class="w-20 h-20 rounded-full bg-blue-500 p-2 text-sm text-center border-gray-300 border border-opacity-60 border-solid bg-opacity-50">趣味</button>
+                        </li>
+                        <li>
+                            <button id="buttoFavo" class="w-20 h-20 rounded-full bg-red-500 p-2 text-sm text-center border-gray-300 border border-opacity-60 border-solid bg-opacity-50">好きな<br>食べ物</button>
+                        </li>
+                        <li>
+                            <button id="buttoComment" class="w-20 h-20 rounded-full bg-gray-500 p-2 text-sm text-center border-gray-300 border border-opacity-60 border-solid bg-opacity-50">ひとこと</button>
+                        </li>
+                    </ul>
+                    <div class="h-36 text-xs sm:mx-auto">
+                        <h4 class="hobby bg-blue-500 bg-opacity-50 flex callout">アニメを見ること<br>ゲームをすること<br>漫画を読むこと<br>おいしいもの<img src="./yuchiassets/img/gohan1.jpg" alt="" style="border-radius: 4px; width: 150px; margin-left: auto;"></h4>
+                        <h4 class="favorite bg-red-500 bg-opacity-50 my-auto">甘いもの<br>トマト</h4>
+                        <h4 class="comment bg-gray-500 bg-opacity-50 my-auto">是非、琳琳飯店にお越しください</h4>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-10">
+            <h1 class="text-4xl text-center" id="us">横もくメンバー</h1>
+            <div class="md:px-56">
+                <ul class="mem-imgs">
+                    <li>
+                        <h2 class="text-center md:text-xl sm:text-lg">ともニキ</h2>
+                        <figure class="int-mem-img">
+                            <img src="./yuchiassets/img/tomo1.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="text-center my-3">
+                                香川出身で元気<br>うどん好きそう<br>メガネ似合うと思うけどな
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="text-center md:text-xl sm:text-lg">鷹</h2>
+                        <figure class="int-mem-img">
+                            <img src="./yuchiassets/img/taka1.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="text-center my-3">
+                                ピアスかっこいいね！<br>筋肉いいね！<br>鳥取何もないね！
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="text-center md:text-xl sm:text-lg">ミズキ</h2>
+                        <figure class="int-mem-img">
+                            <img src="./yuchiassets/img/miduki1.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="text-center my-3">
+                                ともが迷惑かけてごめん<br>たかが迷惑かけてごめん<br>ごめん
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="text-red-50 pb-4">
+        <div class="mx-auto w-24 p-3">
+            <p>琳琳飯店</p>
+        </div>
+        <nav>
+            <ul class="md:flex justify-center md:gap-5 sm:gap-2">
+                <li><a href="./mainpage.assets/mainpage.html">メインページへ</a></li>
+                <li><a href="./tomo.html">ともニキの個人ページへ</a></li>
+                <li><a href="./index.html">鷹の個人ページへ</a></li>
+                <li><a href="./mizuki/mizuki.html">ミヅキの個人ページへ</a></li>
+            </ul>
+
+        </nav>
+    </footer>
+    <script src="./yuchiassets/js/script.js"></script>
+</body>
+</html>
