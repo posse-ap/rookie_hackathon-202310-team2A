@@ -8,8 +8,21 @@ picChange();
 function picChange() {
     count++;
     if (count == img.length) count = 0;
-  //画像選択
-   document.getElementById("changePic").src = img[count];
-  //秒数の指定
+    document.getElementById("changePic").src = img[count];
     setTimeout("picChange()", 4000);
 };
+
+
+const header = document.getElementById("js-header");
+const button = document.getElementById("js-headerButton");
+
+button.addEventListener("click", () => {
+  header.classList.toggle("is-open");
+});
+
+const selfcle = document.getElementById("self&cle")
+button.addEventListener("click", () => {
+  // hiddenElement.style.display = 'block';
+});
+
+

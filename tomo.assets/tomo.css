@@ -36,6 +36,7 @@
     list-style: none;
     display: flex;
     gap: 60px;
+    padding-top: 20px;
 }
 
 .header-li {
@@ -205,5 +206,106 @@ justify-content: center;
     display: flex;
     color: white;
     font-size: 20px;
-    margin-top: 1000px;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+
+@media(max-width:768px){
+
+    .pf-img {
+        height: 180px;
+        margin: 10px auto;
+    }
+
+    .cle-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-logo {
+        padding-top: 10px;
+        z-index: 1;
+    }
+
+    .header-button {
+        width: 42px;
+        height: 42px;
+        position: relative;
+        margin-left: 360px;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    .header-buttonLine {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color:black ;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header-buttonLine:nth-of-type(1) {
+        top: 13px;
+    }
+
+    .header-buttonLine:nth-of-type(2) {
+        top: 20px;
+    }
+
+    .header-buttonLine:nth-of-type(3) {
+        top: 27px;
+    }
+
+    .header-nav {
+        position: fixed;
+        inset: 0;
+        background-color: #F7F9FB;
+        visibility: hidden;
+        /* display: none; */
+        opacity: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 120px 24px 40px;
+        transition: visibility .3s linear, opacity .3s linear;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(1) {
+        transform: translateX(-50%) rotate(45deg);
+        top: 20px;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(3) {
+        transform: translateX(-50%) rotate(-45deg);
+        top: 20px;
+    }
+
+    .header.is-open .header-nav {
+        visibility: visible;
+
+        opacity: 1;
+    }
+
+    .header-nav .header-ul {
+        visibility: visible;
+        flex-direction: column;
+        z-index: 150;
+    }
+
+
+
+
+
+
 }

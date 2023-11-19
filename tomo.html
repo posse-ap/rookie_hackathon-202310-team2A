@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./tomo.assets/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <!-- <link rel="stylesheet" href="./tomo.assets/reset.css"> -->
     <link rel="stylesheet" href="./tomo.assets/tomo.css">
     <title>個人ページ（とも）</title>
 </head>
 <body class="body">
 
-    <header class="header">
+    <header class="header" id="js-header">
         <div class="header-logo">
             <img class="header-img" src="./tomo.assets/img/琳琳飯店.png" alt="" />
         </div>
-        <div>
-            <nav class="header-nav">
-            <ul class="header-ul">
-                <li class="header-li" ><a href="#self"> 自己紹介</a></li>
+        <button class="header-button" id="js-headerButton">
+            <span class="header-buttonLine"></span>
+            <span class="header-buttonLine"></span>
+            <span class="header-buttonLine"></span>
+        </button>
+        <nav class="header-nav">
+            <ul class="header-ul" id="self&cle">
+                <li class="header-li"><a href="#self"> 自己紹介</a></li>
                 <li class="header-li"><a href="#cle"> 従業員紹介</a></li>
             </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
+
 
     <main class="main">
         <p id="self" class="profile-head">自己紹介</p>
@@ -38,9 +43,9 @@
             <div class="pf-right">
                 <div class="ul">
                     <ul>
-                        <li class="li-point">中華料理屋でバイト経験あり</li>
-                        <li class="li-point">炒飯好き</li>
-                        <li class="li-point">麻雀好き</li>
+                        <li class="li-point">中華料理屋でバイト経験あります</li>
+                        <li class="li-point">麻雀好きです</li>
+
                         <li class="li-point">琳琳飯店がもっと盛り上がるように頑張ります！</li>
                     </ul>
                 </div>
@@ -54,23 +59,23 @@
                 <div class="cle-imgtxt">
                     <p class="cle-name">近藤由知</p>
                     <p class="cle-job">シフトリーダー</p>
-                    <p class="cle-protxt">元気な時は元気。思ったより喋る。<br>アニメの話したら喜ぶ。</p>
+                    <p class="cle-protxt">アニメの話<br>したら喜ぶ。</p>
                 </div>
             </div>
             <div class="cle-block">
                 <img class="cle-img" src="./tomo.assets/img/みづき.jpg" alt="">
                 <div class="cle-imgtxt">
                     <p class="cle-name">林美月</p>
-                    <p class="cle-job">エリアマネージャー</p>
-                    <p class="cle-protxt">最初の印象とは裏腹に結構喋る。 <br>しっかりしてる。すごく。</p>
+                    <p class="cle-job">エリマネ</p>
+                    <p class="cle-protxt">しっかりしてる。<br>すごく。</p>
                 </div>
             </div>
             <div class="cle-block">
                 <img class="cle-img" src="./tomo.assets/img/タカ２.jpg" alt="">
                 <div class="cle-imgtxt">
                     <p class="cle-name">吉川貴之</p>
-                    <p class="cle-job">新人バイトくん</p>
-                    <p class="cle-protxt">結構お喋り。<br>見てわかる体格の良さ。<br>でけえ。</p>
+                    <p class="cle-job">新人バイト</p>
+                    <p class="cle-protxt">でけえ。<br>かなり。</p>
                 </div>
             </div>
         </div>
